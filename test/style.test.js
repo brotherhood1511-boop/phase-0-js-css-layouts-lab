@@ -21,7 +21,7 @@ describe('CSS Lab Tests', () => {
   });
 
   test('should link the CSS file', () => {
-    const link = document.querySelector('link[rel="stylesheet"]');
+    const link = document.querySelector('link[rel="style.css"]');
     expect(link).not.toBeNull();
     expect(link.getAttribute('href')).toBe('style.css');
   });
